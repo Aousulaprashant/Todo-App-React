@@ -1,73 +1,94 @@
-### To Do App
+# To Do App
+
+click here to Visit Live Site ->   https://prashanths-todo-app.netlify.app/
 
 ## Overview
 
-click here for Hosted Site ->   https://prashanths-todo-app.netlify.app/
+The To Do App is a React-based web application that allows users to manage their tasks effectively. The application supports creating, updating, and deleting tasks, as well as searching and filtering tasks based on their status and search queries. The tasks are displayed in an expandable list format, showing detailed information such as description and last update time when expanded.
 
-This is a To Do List application built using React. It allows users to create, update, and delete tasks, and includes search and filter functionalities. Tasks can be marked as completed or incomplete, and users can view task details in an expandable format.
+### System Design
 
-## Features
+- **Frontend**: The application is built with React, utilizing functional components and hooks for state management and side effects.
+- **Data Storage**: A local JSON file (`/task.json`) is used to simulate data storage and retrieval.
+- **User Interface**: The UI is designed to be responsive, with components for task management and dynamic updates.
 
-- **Create Task**: Add new tasks to your list.
-- **Update Task**: Edit existing tasks.
-- **Delete Task**: Remove tasks from the list.
-- **Search Tasks**: Filter tasks based on search queries.
-- **Filter Tasks**: View tasks based on their status (All, Completed, Incomplete).
-- **Expandable List**: View detailed information about each task.
-- **Responsive Design**: Optimized for various screen sizes.
+## Implementation
 
-## Technologies Used
+### Components
 
-- **Frontend**: React.js
-- **State Management**: React Hooks
-- **Styling**: CSS
-- **Data Storage**: Local JSON file
+1. **`Homs` Component**: 
+   - Manages the main functionality including fetching tasks, filtering, searching, and handling task addition.
+   - Uses `useEffect` for data fetching and URL parameter management.
+   - Contains logic for displaying tasks and handling task creation, updating, and deletion.
 
-## Getting Started
+2. **`Task` Component**:
+   - Displays individual task details.
+   - Supports task expansion to show additional details and editing functionality.
+   - Provides checkboxes for marking tasks as completed and icons for editing or deleting tasks.
+
+### Key Features
+
+- **Add Task**: Opens an input box for users to add new tasks.
+- **Update Task**: Allows users to edit task details by expanding the task view.
+- **Delete Task**: Provides a delete icon for removing tasks.
+- **Search and Filter**: Implements search functionality and filter options to manage task visibility.
+- **Expandable List**: Shows task details including description and last updated time when expanded.
+
+## Setup and Running the Application
 
 ### Prerequisites
 
-- npm installed on your machine.
+- npm should be installed on your system.
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the Repository**:
 
    ```bash
    git clone https://github.com/your-username/todo-app.git
    ```
 
-2. Navigate into the project directory:
+2. **Navigate to the Project Directory**:
 
    ```bash
    cd todo-app
    ```
 
-3. Install dependencies:
+3. **Install Dependencies**:
 
    ```bash
    npm install
    ```
 
-### Running the App
+### Running the Application
 
-1. Start the development server:
+1. **Start the Development Server**:
 
    ```bash
    npm start
    ```
 
-2. Open your browser and go to `http://localhost:3000` to see the app in action.
+2. **Open the Application**:
+
+   Navigate to `http://localhost:3000` in your web browser to view the application.
+
+### Configuration
+
+- **Task Data**: The application uses a local JSON file located at `/public/task.json` for task data. Ensure this file is properly configured with task data in JSON format.
 
 ## Usage
 
-- **Adding Tasks**: Click the “Add” button to open the input box, then enter a task title and description.
-- **Updating Tasks**: Click on a task title to expand it and enter edit mode.
-- **Deleting Tasks**: Use the delete icon to remove a task.
-- **Searching and Filtering**: Use the search box and filter dropdown to find tasks.
+- **Add New Task**: Click the "Add" button to open the input box, enter the task details, and submit the form.
+- **Edit Task**: Click on a task title to expand it and enter edit mode.
+- **Delete Task**: Click the delete icon to remove a task.
+- **Search Tasks**: Use the search input to filter tasks based on title.
+- **Filter Tasks**: Use the filter dropdown to view tasks based on their status (All, Completed, Incomplete).
 
 ## Contributing
 
-Feel free to fork this repository and submit pull requests. Contributions are welcome!
+Contributions are welcome! Feel free to fork this repository and submit pull requests for improvements or bug fixes.
 
+## Acknowledgements
 
+- **React**: For the powerful library used to build the user interface.
+- **React Icons**: For the icons used in the application.
