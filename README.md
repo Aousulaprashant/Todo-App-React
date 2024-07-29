@@ -45,13 +45,13 @@ The To Do App is a React-based web application that allows users to manage their
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/Aousulaprashant/Todo-App-React.git
    ```
 
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd todo-app
+   cd todo-app-react
    ```
 
 3. **Install Dependencies**:
