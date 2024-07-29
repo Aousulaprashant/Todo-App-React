@@ -1,0 +1,201 @@
+.main-task {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 30%;
+    
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .task-title {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+    color: #6c63ff;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .task-title.completed {
+    text-decoration: line-through;
+    color: #b0b0b0;
+  }
+  
+  .update {
+    display: flex;
+    align-items: center;
+  }
+  
+  .update svg {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #b0b0b0;
+    transition: color 0.3s;
+    
+  }
+  
+  .update svg:hover {
+    color: #000;
+    
+  }
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+   
+  }
+  .task input[type="checkbox"]:checked {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    
+  }
+  
+/*
+
+ addnew note 
+
+*/
+
+  
+  .input-box-overlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-box {
+    background: white;
+
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-box-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel-button, .apply-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #ddd;
+  }
+  
+  .apply-button {
+    background-color: #6c63ff;
+    color: white;
+  }
+
+
+/*
+  extended details 
+*/
+
+
+
+
+
+
+
+  .extendedData {
+    margin-top: 10px;
+ 
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+  }
+  
+  .extendedData.expanded {
+    display: block;
+  }
+
+  
+  .task-details {
+    margin-top: 10px;
+  }
+  
+  .task-details p {
+    margin: 5px 0;
+  }
+  
+  .task-details strong {
+    font-weight: bold;
+    color: #6c63ff;
+  }
+
+
+  .edit-title,
+.edit-des {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-title {
+  height: 30px;
+}
+
+.edit-des {
+  height: 60px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #6c63ff;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}

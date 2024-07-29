@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Complete React project",
+      "description": "Finish the Todo List application using React and make sure all features are implemented.",
+      "lastUpdated": "2024-07-29T10:30:00Z",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Study for exams",
+      "description": "Review all study materials and practice past exam papers.",
+      "lastUpdated": "2024-07-28T14:45:00Z",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Grocery shopping",
+      "description": "Buy fruits, vegetables, and other essential groceries.",
+      "lastUpdated": "2024-07-27T09:00:00Z",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Call the bank",
+      "description": "Inquire about the recent transactions and update contact details.",
+      "lastUpdated": "2024-07-26T16:30:00Z",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Schedule a dentist appointment",
+      "description": "Book an appointment for a regular dental check-up.",
+      "lastUpdated": "2024-07-25T11:00:00Z",
+      "completed": true
+    }
+  ]
+  

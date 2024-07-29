@@ -1,0 +1,108 @@
+
+  .main-div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100vh;
+  
+  }
+
+  .darkmood {
+    background-color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #5f59ca;
+    padding-bottom: 40px;
+
+  }
+  
+  .search-div {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 20px;
+    margin-left: 300px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    width: 50%;
+    
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .search-box svg {
+    color: #6c63ff;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #6c63ff;
+    background-color: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  select option {
+    background-color: #8b85f8;
+    color: white;
+  }
+  
+  .toggle-mode {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .toggle-mode svg {
+    color: #fff;
+  }
+
+  .addicon svg{
+    color: #6c63ff;
+    position:absolute;
+    cursor: pointer;
+    right: 400px;
+    bottom: 50px;
+  }
+.addicon svg:hover{
+  color: #4943c6;
+}
+
+
+.no-tasks{
+  display: flex;
+  max-width: 100%;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-tasks img{
+  margin-top: 20px;
+}
+.no-tasks p{
+  margin-top: 20px;
+  color: #545353;
+}
