@@ -14,7 +14,18 @@ const Task = ({ task, toggleComplete, updateTask, deleteTask }) => {
   const handleview = (e) => {
     e.preventDefault();
 
-    setextended(!isExpanded);
+if (isEditing === true && isExpanded === false) {
+      setIsEditing(false);
+      setextended();
+    } else if (isEditing === true && isExpanded === true) {
+      setIsEditing(false);
+      setextended(false);
+    } else if (isExpanded === true || isExpanded === true) {
+      setextended(false);
+      setIsEditing(false);
+    } else {
+      setextended(true);
+    }
   };
 
   const formatDateTime = (dateTime) => {
@@ -32,8 +43,13 @@ const Task = ({ task, toggleComplete, updateTask, deleteTask }) => {
     setIsEditing(false);
   };
   const Toggleedit = (e) => {
-    setIsEditing(!isEditing);
-    setextended(!isExpanded);
+    if (isEditing === false) {
+      setIsEditing(true);
+      setextended(true);
+    } else {
+      setIsEditing(false);
+      setextended(false);
+    }
   };
   return (
     <div className="main-task">
